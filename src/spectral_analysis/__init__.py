@@ -1,1 +1,2 @@
 from .analysis import process_spectrum_segments
+from .treatement import normalize_spectrum, estimate_noise_from_empty_channels, detect_peaks
