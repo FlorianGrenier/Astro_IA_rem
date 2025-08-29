@@ -1,0 +1,2 @@
+Segment,Décalage (MHz),Corrélation max,Nb pics obs,Nb pics modèle aligné,Nb pics matchés,Ratio pics matchés,Rappel,Tanimoto coefficient,Pearson,Jaccard
+1,57.29999999499705,318524863319.78,601,28,13,0.4642857142857143,0.4642857142857143,0.025048169556840076,0.1091410477967693,0.025048169556840076
