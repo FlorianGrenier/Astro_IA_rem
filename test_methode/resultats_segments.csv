@@ -1,0 +1,2 @@
+Segment,Décalage (GHz),Corrélation max,Nb pics obs,Nb pics modèle aligné,Nb pics matchés,Ratio pics matchés,F1-score,Précision,Rappel
+1,-0.43015117313188966,2.2478869409595186,313,55,39,0.7090909090909091,0.21195652173913043,0.12460063897763578,0.7090909090909091
