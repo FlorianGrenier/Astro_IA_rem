@@ -1,57 +1,38 @@
-# Astro_IA
+# Astro-IA 🌌  
 
-AI for astronomical spectral line analysis.
+## Description  
 
-## Structure du projet
+Astro-IA est un projet de recherche appliquée en astrophysique moléculaire visant à développer des méthodes d’intelligence artificielle pour l’identification rapide et automatique de raies spectrales issues d’observations (sub)millimétriques complexes.  
 
+L’objectif principal est d’exploiter des techniques de deep learning (CNN 1D, ResNet, etc.) pour reconnaître les signatures de différentes molécules dans des spectres synthétiques et, à terme, dans des spectres observationnels (type ALMA).  
 
-## Description des dossiers
+---
 
-- **astro_ia/** : Contient les fichiers et bibliothèques nécessaires à l'environnement Python virtuel.
-- **output/** : Contient les fichiers de sortie générés par les analyses, tels que des graphiques et des résultats intermédiaires.
-- **src/** : Contient le code source principal du projet.
-  - `main.py` : Point d'entrée principal du projet.
-  - `spectral_analysis/` : Module pour l'analyse spectrale, incluant des fonctions comme `process_spectrum_segments`.
-  - `data/` : Contient les fichiers de données brutes et de modèles utilisés pour les analyses.
-  - `result_correspondance/` : Stocke les résultats des correspondances entre pics spectraux.
-  - `test/` : Contient des tests pour valider les fonctionnalités.
-- **test_methode/** : Contient des notebooks Jupyter pour tester différentes méthodes d'analyse, comme la corrélation croisée et DTW (Dynamic Time Warping).
+## Fonctionnalités principales  
 
-- **requirements.txt** : Liste des dépendances Python nécessaires au projet.
-- **AI_for_spectral_line_analysis.pdf** : Sujet lié au projet.
+- ⚗️ **Génération de données synthétiques** réalistes (spectres bruités avec bruit gaussien, “pollution” de lignes parasites)  
+- 📂 **Pipeline complet de préparation des données** : normalisation, correction d’étiquettes  
+- 🧠 **Modèles deep learning pour spectres 1D** : CNN, variantes avec SE-blocks, dilated conv, multi-canaux  
+- 📈 **Entraînement et évaluation** avec PyTorch (BCEWithLogitsLoss, pos_weight pour déséquilibre des classes)  
+- 🏅 **Métriques avancées** : F1-micro/macro, mAP, Hamming Loss, Exact Match Accuracy, ROC-AUC, PR curves  
+- 🔎 **Visualisation et analyse** : courbes d’apprentissage, matrices de confusion, AP par classe  
+- 🔄 **Expérimentations extensives** : variation des kernels, profondeur des modèles, blocs résiduels, attention  
 
-## Fonctionnalités principales
+---
 
-- Analyse des spectres astronomiques pour détecter et comparer les lignes spectrales.
-- Correspondance entre les pics des spectres observés et modélisés.
-- Génération de graphiques pour visualiser les spectres et les correspondances.
-- Exportation des résultats sous forme de fichiers CSV.
+## Prérequis  
 
-## Installation
+- Python 3.11  
+- PyTorch + CUDA (GPU recommandé)  
+- Numpy, Pandas, Matplotlib, Scikit-learn  
+- Jupyter Notebook (pour les rapports et visualisations)  
 
-1. Clonez ce dépôt :
-    ```bash
-    git clone <>
-    cd Astro_IA
+---
 
-2. Activez l'environnement virtuel :
+## Installation  
 
-    source astro_ia.bin/activate
+### Cloner le dépôt  
 
-3. Installez les dépendances :
-
-    pip install -r requirements.txt
-
-Utilisation
-Placez vos fichiers de données dans le dossier src/data/.
-Exécutez le script principal :
-
-1. Placez vos fichiers de données dans le dossier src/data/.
-
-2. Exécutez le script principal :
-
-python -m src/main.py
-
-Auteurs
-
-GRENIER Florian
+```bash
+git clone https://github.com/FlorianGrenier/Astro_IA_rem.git
+cd Astro_IA
